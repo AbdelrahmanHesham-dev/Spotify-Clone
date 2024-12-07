@@ -22,13 +22,14 @@ let openMenu = ref(false)
 <template>
   <div>
     <div
+      id="mian-sec"
       class="w-[calc(100%-240px)] h-[60px] fixed right-0 z-20 bg-[#101010] bg-opacity-80 flex items-center justify-between"
     >
       <div class="ml-9">
         <input
           type="text"
           placeholder="Search..."
-          class="rounded-full bg-[#282828] px-4 py-2 w-64 focus:outline-none"
+          class="hidden sm:block rounded-full bg-[#282828] px-4 py-2 w-64 focus:outline-none"
         />
       </div>
       <button
@@ -126,6 +127,7 @@ let openMenu = ref(false)
     </div>
   </div>
   <div
+    id="mian-sec"
     class="fixed right-0 top-0 w-[calc(100%-240px)] overflow-auto h-full bg-gradient-to-b from-[#1c1c1c] to-black"
   >
     <div class="mt-[70px]"></div>
@@ -135,3 +137,15 @@ let openMenu = ref(false)
 
   <MusicPlayer v-if="currentTrack" />
 </template>
+
+<style scoped>
+@media (max-width: 750px) {
+  #sideNav {
+    width: 130px;
+    padding: 0.75rem;
+  }
+  #mian-sec {
+    width: calc(100% - 130px);
+  }
+}
+</style>

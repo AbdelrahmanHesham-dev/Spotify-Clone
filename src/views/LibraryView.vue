@@ -22,36 +22,37 @@ const playFunc = () => {
 </script>
 
 <template>
-  <div class="p-8 overflow-x-hidden">
+  <div class="p-8 conten overflow-x-hidden">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Abdelrahman Library
     </button>
+    <!-- ############################## -->
+    <div class="flex items-start flex-col md:flex-row md:items-center w-full relative h-full">
+      <div class="flex justify-center mt-7">
+        <img class="w-[180px] md:w-[180px]" :src="artist.albumCover" />
+      </div>
 
-    <div class="py-1.5"></div>
-    <div class="flex items-center w-full relative h-full">
-      <img width="140" :src="artist.albumCover" />
-
-      <div class="w-full ml-5">
+      <div class="w-full md:mt--10 md:ml-5">
         <div
           style="font-size: 33px"
-          class="text-white absolute w-full hover:underline cursor-pointer top-0 font-bosemiboldld"
+          class="text-white hover:underline cursor-pointer font-bosemiboldld"
         >
           {{ artist.name }}
         </div>
 
-        <div class="text-gray-300 text-[13px] flex">
-          <div class="flex">Album</div>
-          <div class="ml-2 flex">
-            <div class="circle mt-2 mr-2" />
+        <div class="text-gray-300 text-[13px] flex flex-wrap md:flex-nowrap">
+          <div class="py-4 flex">Album</div>
+          <div class="ml-2 py-4 flex">
+            <div class="circle mt-2 mr-2"></div>
             <span class="-ml-0.5">{{ artist.releaseYear }}</span>
           </div>
-          <div class="ml-2 flex">
-            <div class="circle mt-2 mr-2" />
+          <div class="ml-2 py-4 flex">
+            <div class="circle mt-2 mr-2"></div>
             <span class="-ml-0.5">{{ artist.tracks.length }} songs</span>
           </div>
         </div>
 
-        <div class="absolute flex gap-4 items-center justify-start bottom-0 mb-1.5">
+        <div class="flex gap-4 items-center justify-start md:absolute">
           <button class="p-1 rounded-full bg-white" @click="playFunc()">
             <Play v-if="!isPlaying" fillColor="#181818" :size="25" />
             <Pause v-else fillColor="#181818" :size="25" />
@@ -66,8 +67,9 @@ const playFunc = () => {
       </div>
     </div>
 
+    <!-- ############################## -->
     <div class="mt-6"></div>
-    <div class="flex items-center justify-between px-5 pt-2">
+    <div class="flex items-center justify-between px-5 pt-2 fix">
       <div class="flex items-center justify-between text-gray-400">
         <div class="mr-7">#</div>
         <div class="text-sm">Title</div>
@@ -88,5 +90,17 @@ const playFunc = () => {
   height: 4px;
   background-color: rgb(189, 189, 189);
   border-radius: 100%;
+}
+@media (max-width: 750px) {
+  .conten {
+    padding: 9px;
+  }
+  .text-2xl {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .fix {
+    padding: 0;
+  }
 }
 </style>

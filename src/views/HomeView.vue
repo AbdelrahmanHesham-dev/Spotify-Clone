@@ -3,12 +3,12 @@ import HomeCard from '@/components/HomeCard.vue'
 </script>
 
 <template>
-  <div class="p-8">
+  <div class="p-8 conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Made For Abdelrahman
     </button>
     <div class="py-1.5"></div>
-    <div class="flex items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       <HomeCard image="https://picsum.photos/id/30/300/300" title="Hello" subTitle="Adele" />
       <HomeCard
         image="https://picsum.photos/id/35/300/300"
@@ -16,31 +16,20 @@ import HomeCard from '@/components/HomeCard.vue'
         subTitle="Ed Sheeran"
       />
       <HomeCard
-        class="md:block hidden"
         image="https://picsum.photos/id/40/300/300"
         title="Blinding Lights"
         subTitle="The Weeknd"
       />
-      <HomeCard
-        class="lg:block hidden"
-        image="https://picsum.photos/id/99/300/300"
-        title="Someone Like"
-        subTitle="Adele"
-      />
-      <HomeCard
-        class="xl:block hidden"
-        image="https://picsum.photos/id/55/300/300"
-        title="Perfect"
-        subTitle="Ed Sheeran"
-      />
+      <HomeCard image="https://picsum.photos/id/99/300/300" title="Someone Like" subTitle="Adele" />
+      <HomeCard image="https://picsum.photos/id/55/300/300" title="Perfect" subTitle="Ed Sheeran" />
     </div>
   </div>
-  <div class="p-8">
+  <div class="conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Recently played
     </button>
     <div class="py-1.5"></div>
-    <div class="flex items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       <HomeCard
         image="https://picsum.photos/id/20/300/300"
         title="Havana"
@@ -67,12 +56,12 @@ import HomeCard from '@/components/HomeCard.vue'
       />
     </div>
   </div>
-  <div class="p-8">
+  <div class="conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Podcasts to make you smarter
     </button>
     <div class="py-1.5"></div>
-    <div class="flex items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       <HomeCard image="https://picsum.photos/id/10/300/300" title="Fix You" subTitle="Coldplay" />
       <HomeCard
         image="https://picsum.photos/id/15/300/300"
@@ -99,12 +88,12 @@ import HomeCard from '@/components/HomeCard.vue'
       />
     </div>
   </div>
-  <div class="p-8">
+  <div class="conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Recommended songs
     </button>
     <div class="py-1.5"></div>
-    <div class="flex items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       <HomeCard image="https://picsum.photos/id/81/300/300" title="Stay" subTitle="Justin Bieber" />
       <HomeCard
         image="https://picsum.photos/id/35/300/300"
@@ -131,12 +120,12 @@ import HomeCard from '@/components/HomeCard.vue'
       />
     </div>
   </div>
-  <div class="p-8">
+  <div class="conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Recommended for today
     </button>
     <div class="py-1.5"></div>
-    <div class="flex items-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       <HomeCard
         image="https://picsum.photos/id/100/300/300"
         title="Happy"
@@ -164,3 +153,15 @@ import HomeCard from '@/components/HomeCard.vue'
     </div>
   </div>
 </template>
+
+<style scoped>
+@media (max-width: 750px) {
+  .conten {
+    padding: 7px;
+  }
+  .text-2xl {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+</style>

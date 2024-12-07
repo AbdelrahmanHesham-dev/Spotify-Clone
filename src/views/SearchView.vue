@@ -3,7 +3,7 @@ import CategorySelect from '@/components/CategorySelect.vue'
 </script>
 
 <template>
-  <div class="p-6">
+  <div class="p-6 conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       What Do You Want To Play ?
     </button>
@@ -28,3 +28,15 @@ import CategorySelect from '@/components/CategorySelect.vue'
     </div>
   </div>
 </template>
+
+<style scoped>
+@media (max-width: 750px) {
+  .conten {
+    padding: 9px;
+  }
+  .text-2xl {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+</style>

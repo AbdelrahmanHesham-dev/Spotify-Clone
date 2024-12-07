@@ -54,7 +54,7 @@ onMounted(() => {
 
         <Pause v-else fillColor="#FFFFFF" :size="25" @click="useSong.playOrPauseSong()" />
       </div>
-      <div v-else class="text-white font-semibold w-[40px] ml-5">
+      <div v-else class="text-white font-semibold w-[40px] fix ml-5">
         <span :class="{ 'text-green-500': currentTrack && currentTrack.name === track.name }">
           {{ index }}
         </span>
@@ -73,9 +73,17 @@ onMounted(() => {
       <button type="button" v-if="isHover">
         <Heart fillColor="#1BD760" :size="22" />
       </button>
-      <div v-if="isTrackTime" class="text-xs mx-5 text-gray-400">
+      <div v-if="isTrackTime" class="fix text-xs mx-5 text-gray-400">
         {{ isTrackTime }}
       </div>
     </div>
   </li>
 </template>
+
+<style scoped>
+@media (max-width: 750px) {
+.fix {
+  margin: 0px;
+}
+}
+</style>
