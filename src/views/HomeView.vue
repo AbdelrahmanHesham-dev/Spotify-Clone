@@ -9,7 +9,7 @@ import HomeCard from '@/components/HomeCard.vue'
     </button>
     <div class="py-1.5"></div>
     <div class="flex items-center">
-      <HomeCard image="/images/albumCovers/cover.jpg" title="Hello" subTitle="Adele" />
+      <HomeCard image="https://picsum.photos/id/30/300/300" title="Hello" subTitle="Adele" />
       <HomeCard
         image="https://picsum.photos/id/35/300/300"
         title="Shape of You"

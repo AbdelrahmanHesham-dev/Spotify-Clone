@@ -11,7 +11,7 @@ const { image, title, subTitle } = toRefs(props)
 </script>
 
 <template>
-  <RouterLink>
+  <RouterLink :to="{ name: 'library' }">
     <div class="bg-[#111111] p-4 rounded-md m-2 hover:bg-[#252525] cursor-pointer">
       <img :src="image" class="rounded-md" alt="">
       <div class="text-white pt-4 font-semibold text-[17px]">{{ title }}</div>
