@@ -1,0 +1,53 @@
+{
+    "name": "Top Songs",
+    "albumCover": "/images/albumCovers/cover.jpg",
+    "releaseYear": "2024",
+    "tracks": [
+        {
+            "id": 1,
+            "name": "Koul Waad",
+            "path": "/songs/Koul Waad.mp3"
+        },
+        {
+            "id": 2,
+            "name": "Afroto Kebda",
+            "path": "/songs/Afroto Kebda.mp3"
+        },
+        {
+            "id": 3,
+            "name": "Es7a Le El Kalam",
+            "path": "/songs/Es7a Le El Kalam.mp3"
+        },
+        {
+            "id": 4,
+            "name": "Habeeeby Leh",
+            "path": "/songs/Habeeeby Leh.mp3"
+        },
+        {
+            "id": 5,
+            "name": "Haygely Mawgo3",
+            "path": "/songs/Haygely Mawgo3.mp3"
+        },
+        {
+            "id": 6,
+            "name": "Tislam",
+            "path": "/songs/Tislam.mp3"
+        },
+        {
+            "id": 7,
+            "name": "Reda El Bahrawy",
+            "path": "/songs/Reda El Bahrawy.mp3"
+        },
+        {
+            "id": 8,
+            "name": "Zorouf Me3andany",
+            "path": "/songs/Zorouf Me3andany.mp3"
+        },
+        {
+            "id": 9,
+            "name": "Mateegy A3ady Aleiky",
+            "path": "/songs/Mateegy A3ady Aleiky.mp3"
+        }
+    ]
+}
+
