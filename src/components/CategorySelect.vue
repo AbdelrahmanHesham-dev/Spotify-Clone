@@ -19,7 +19,7 @@ const { category } = toRefs(props)
       <div class="text-white pt-3 pl-3 font-semibold text=[23px]">{{ category }}</div>
       <img
         :src="image || ''"
-        class="absolute contrast-[0.55] -right-3.5 bottom-0 rotate-[9deg] lg:max-w-[190px] md:max-w-[150px] max-w-[90px]"
+        class="absolute contrast-[0.55] -right-3.5 bottom-0 rotate-[9deg] lg:max-w-[190px] md:max-w-[150px] max-w-[150px]"
 
         alt=""
       />
