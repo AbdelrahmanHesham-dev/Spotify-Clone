@@ -98,7 +98,7 @@ watch(
     v-if="audio"
     class="fixed flex items-center justify-between bottom-0 w-full z-50 h-[90px] bg-[#181818] border-t border-t-[#272727]"
   >
-    <div class="flex items-center w-1/4">
+    <div class="hidden sm:flex items-center w-1/4">
       <div class="flex items-center ml-4">
         <img class="rounded-sm shadow-2xl" width="55" :src="currentArtist.albumCover" />
         <div class="ml-4">
@@ -115,7 +115,7 @@ watch(
         <PictureInPictureBottomRight class="ml-4" fillColor="#FFFFFF" :size="18" />
       </div>
     </div>
-
+    <!-- ###################### -->
     <div class="max-w-[35%] mx-auto w-2/4 mb-3">
       <div class="flex-col items-center justify-center">
         <div class="buttons flex items-center justify-center h-[30px]">
@@ -166,18 +166,24 @@ watch(
         </div>
       </div>
     </div>
+    <!-- ####################### -->
 
-    <div class="flex items-center w-1/4 justify-end pr-10">
+    <div class="flex items-center w-1/4 justify-end pr-10 fix">
       <MusicPlayerVolume />
     </div>
   </div>
 </template>
 
-<style>
+<style scoped>
 .rangeDotHidden[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 0;
   height: 0;
+}
+@media (max-width: 500px) {
+  .fix {
+    width: 35%;
+  }
 }
 </style>
