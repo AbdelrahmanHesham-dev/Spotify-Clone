@@ -24,7 +24,7 @@ import HomeCard from '@/components/HomeCard.vue'
       <HomeCard image="https://picsum.photos/id/55/300/300" title="Perfect" subTitle="Ed Sheeran" />
     </div>
   </div>
-  <div class="conten">
+  <div class="p-8 conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Recently played
     </button>
@@ -56,7 +56,7 @@ import HomeCard from '@/components/HomeCard.vue'
       />
     </div>
   </div>
-  <div class="conten">
+  <div class="p-8 conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Podcasts to make you smarter
     </button>
@@ -88,7 +88,7 @@ import HomeCard from '@/components/HomeCard.vue'
       />
     </div>
   </div>
-  <div class="conten">
+  <div class="p-8 conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Recommended songs
     </button>
@@ -120,7 +120,7 @@ import HomeCard from '@/components/HomeCard.vue'
       />
     </div>
   </div>
-  <div class="conten">
+  <div class="p-8 conten">
     <button type="button" class="text-white text-2xl font-semibold hover:underline cursor-pointer">
       Recommended for today
     </button>
