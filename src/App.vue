@@ -41,7 +41,7 @@ let openMenu = ref(false)
           <img
             class="rounded-full"
             width="27"
-            src="https://abdelrahman-hesham.vercel.app/image/me-circle.webp"
+            src="/images/me.png"
             alt=""
           />
           <div class="ml-1.5 text-white text-[14px] font-semibold">Abdelrahman</div>
